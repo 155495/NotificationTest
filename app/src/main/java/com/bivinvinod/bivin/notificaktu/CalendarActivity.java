@@ -7,11 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
 import  com.bivinvinod.bivin.notificaktu.adapters.CalendarAdapter;
+import com.github.clans.fab.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ public class CalendarActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.Adapter reAdapter;
     RecyclerView.LayoutManager reLayoutManager;
-    
+    android.support.design.widget.FloatingActionButton fabback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,16 @@ public class CalendarActivity extends AppCompatActivity {
         reAdapter=new CalendarAdapter(this,dbList);
         recyclerView.setAdapter(reAdapter);
         Log.d("recycleSize", String.valueOf(dbList.size()));
+
+        fabback=findViewById(R.id.fabcalenderback);
+        fabback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
     }
 
 }
