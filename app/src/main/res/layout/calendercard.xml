@@ -1,0 +1,117 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="0dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtid"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hai" />
+
+                <TextView
+                    android:id="@+id/txtEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="hai" />
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="80dp"
+    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="start"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/txtDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold|italic"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:text="hai" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textStyle="bold|italic"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/darkblue"
+                            android:text="hai"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/idgifshare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right">
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="100dp"
+                                android:layout_gravity="right"
+                                android:layout_height="100dp"
+                                android:src="@drawable/sharegif" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtActive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/darkblue"
+                            android:textSize="15dp"
+                            android:textStyle="bold|italic"
+                            android:text="Status" />
+
+                        </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
