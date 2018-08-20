@@ -47,7 +47,7 @@
             android:padding="50dp"/>
 
         <com.github.clans.fab.FloatingActionMenu
-            android:id="@+id/menu"
+            android:id="@+id/fabmenusettings"
             fab:menu_animationDelayPerItem="50"
             fab:menu_backgroundColor="@android:color/transparent"
             fab:menu_buttonSpacing="0dp"
@@ -82,8 +82,8 @@
             fab:menu_shadowXOffset="1dp"
             fab:menu_shadowYOffset="3dp"
             fab:menu_showShadow="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:layout_gravity="right"
@@ -92,7 +92,7 @@
             >
 
             <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/fab"
+                android:id="@+id/fabsettings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_colorNormal="#ffffff"

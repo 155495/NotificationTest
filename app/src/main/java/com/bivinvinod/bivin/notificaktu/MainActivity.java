@@ -19,6 +19,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
+
 import java.util.Calendar;
 import java.util.List;
 
@@ -58,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
         TextView txtHeadingCalendar=findViewById(R.id.heading);
         Typeface typeface=Typeface.createFromAsset(getAssets(),"fonts/font2.otf");
         txtHeadingCalendar.setTypeface(typeface,Typeface.BOLD);
+        FloatingActionMenu fabmenu=findViewById(R.id.fabmenusettings);
+        fabmenu.setClosedOnTouchOutside(true);
+        FloatingActionButton fabsetting=findViewById(R.id.fabsettings);
+
+        fabsetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Available in Next Update..",Toast.LENGTH_SHORT).show();
+            }
+        });
           //final Context context=this;
        /* Stetho.newInitializerBuilder(context)
                 .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(context))

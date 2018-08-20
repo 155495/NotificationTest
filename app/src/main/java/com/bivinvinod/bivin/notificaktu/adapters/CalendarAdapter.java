@@ -76,7 +76,8 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.ViewHo
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Notifica");
                 sendIntent.putExtra(Intent.EXTRA_TEXT,
-                        "Notifica KTU Notification:\n *"+dbList.get(position).getTitle()+"* \n"+dbList.get(position).getDate());
+                        "Notifica KTU Notification:\n *"+dbList.get(position).getTitle()+
+                                "* \n"+dbList.get(position).getDate()+"\n https://play.google.com/store/apps/details?id=com.bivinvinod.notificaktu");
                 sendIntent.setType("text/plain");
                 context.startActivity(Intent.createChooser(sendIntent, "Share Event"));
             }
